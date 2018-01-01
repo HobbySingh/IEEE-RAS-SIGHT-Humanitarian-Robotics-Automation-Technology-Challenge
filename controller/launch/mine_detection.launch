@@ -1,0 +1,10 @@
+<launch>
+    <include file="$(find hratc2017_framework)/launch/run_simulation.launch"/>
+
+    <node pkg="main_controller" type="main_rover_control" name="main_rover_control" output="screen"/>
+
+    <node pkg="main_controller" type="mine_detection" name="mine_detection" output="screen"/>
+
+    <!--<node pkg="main_controller" type="obstacle_avoidance" name="obstacle_avoidance" output="screen"/>    -->
+
+</launch>
